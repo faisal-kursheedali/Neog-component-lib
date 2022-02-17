@@ -1,0 +1,10 @@
+@import url(../../component-lib/import.css);
+
+
+
+/* this style is only for centering nav in documentation part */
+.navigation-center{
+    padding: 1rem ;
+    background-color: var(--darkgray-bg);
+   padding-right: 3.55rem;
+}
