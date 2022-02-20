@@ -12,6 +12,7 @@
     align-items: flex-end;
     padding: 1rem;
     background-color: white;
+    padding-left: 0px;
 }
 .nav-main-logo,.nav-side-bar-logo{
     color: black;
