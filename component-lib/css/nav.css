@@ -1,9 +1,6 @@
-/* This file has all styles for nav component */
 @import url(../lib/main-root.css);
 
-
-/* This is the style for main navigation bar */
-.nav-main{
+.nav-main,.doc-main{
     position: relative;
     width: 100%;
     display: flex;
@@ -12,30 +9,30 @@
     align-items: flex-end;
     padding: 1rem;
     background-color: white;
-    padding-left: 0px;
 }
-.nav-main-logo,.nav-side-bar-logo{
+.nav-main-logo,.doc-main-logo,.nav-side-bar-logo{
     color: black;
     font-size: 2rem;
     cursor: pointer;
 }
-.nav-side-bar-logo-icn,.nav-logo-icn{
+.nav-side-bar-logo-icn,.nav-logo-icn,.doc-logo-icn{
     font-size: 3rem;
     color: var(--cta1);
 }
-.nav-main-btn{
+.nav-main-btn,.doc-main-btn{
+
     margin-left: auto;
 }
-.nav-icn{
+.nav-icn,.doc-icn{
     font-size: 2rem;
     color: black;
-    margin: 4px;
     cursor: pointer;
+    /* margin: 4px; */
 }
-.nav-icn:hover{
+.nav-icn:hover,.doc-icn:hover{
     color: var(--cta1);
 }
-.nav-main-login{
+.nav-main-login,.doc-main-login{
     color: var(--cta1);
     background-color: var(--litegray-bg);
     border: 1px solid var(--cta1);
@@ -60,8 +57,6 @@
     background-color:white;
     color: black;
 }
-
-/* Navigathion in side bar */
 .nav-side-bar-close{
     position: absolute;
     top: 1rem;
@@ -118,36 +113,40 @@
     color: var(--cta1);
     background-color: white;
 }
-
-/* This is used for sliding bar whixh has navigation */
-/* here it is made for component lib so it is nav-comp */
-.nav-comp{
+.nav-comp{  
     position: sticky;
     top: 0;
+    z-index:5;
     display: block;
     color: black;
+    /* position: absolute;
+    left: 0;
+    bottom: -3.5rem; */
     width: 100%;
     cursor: pointer;
+    /* margin-bottom: 1rem; */
     background-color: var(--litegray-bg);
 }
 .nav-comp-head{
+    
+    top: 0;
     padding: 1rem;
     font-size: 1.5rem;
+    background-color: var(--litegray-bg);
 }
-.nav-comp-head:hover{
+/* .nav-comp-head:hover{
     color: var(--cta1);
-}
+} */
 .nav-comp-item{
 
     display: none;
-    background-color:gray;
+    /* background-color:gray; */
     color: black;
     line-height: 0;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem;    
 }
 .nav-comp-list{
-    color: white;
+    /* color: white; */
     font-size: 1.5rem;
     line-height: 0;
     margin-top: 0px;
@@ -175,6 +174,30 @@
     margin-bottom: .5rem;
     max-width: 50%;
 }
+.all-comp-display{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.comp-display{
+    /* position: relative;
+    overflow: hidden; */
+    width: 100%;
+}
+
+/* .comp-display{
+    width: 100%;
+}*/
+.comp-display-ifram{
+    /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  width: 100%;
+  height: 100%;
+} 
 
 @media (max-width:426px) {
     
@@ -214,3 +237,21 @@
         width: 100%;
     }
 }
+/* @media (min-width:769px){
+    
+    .nav-comp{
+        width: 30%;
+        height: 100%;
+    }
+    .nav-comp-icn{
+        display: none;
+    }
+    .nav-comp-head{
+        border-bottom: 2px solid gray;
+        pointer-events: none;
+    }
+    .nav-comp-item{
+        display: block;
+    }
+    .all-comp-display{flex-direction: row;}
+} */

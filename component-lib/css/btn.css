@@ -85,6 +85,11 @@
     color: var(--link-default);
     
 }
+.link-nostyle{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
 .link-underlined{
     text-decoration: underline 4px;
     text-decoration-color:var(--cta1) ;
@@ -185,6 +190,7 @@
     text-decoration-color:inherit;
 
 }
+
 .link-sec:hover{
     opacity: 0.8;
 }

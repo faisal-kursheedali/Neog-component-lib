@@ -6,6 +6,12 @@
 body{
     overflow-x: hidden;
 }
+*, :after, :before {
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
 
 /* this file act as junction point to use all components */
 /* user have to import this one css file to use the component */
