@@ -1,0 +1,87 @@
+@import url(../../component-lib/import.css);
+
+
+.doc-comp-logo-icn{
+
+    font-size: 3rem;
+    background-color: var(--litegray-bg);
+    padding: 8px;
+    border-radius: 3rem;
+    color: var(--cta1);
+    cursor: pointer;
+    position: fixed;
+    right: 2rem;
+    top: 8rem;
+   z-index: 3; 
+}
+
+.doc-comp-item{
+    color: black;
+    position: fixed;
+    right: 2rem;
+    background: var(--litegray-bg);
+    top: 8rem;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2; 
+    height: 400px;
+    overflow-y: scroll;
+}
+.doc-comp-item::-webkit-scrollbar{
+    width: .5rem;
+    border-radius: 3rem;
+    background-color: gray;
+    
+}
+.doc-comp-item::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: var(--cta2);
+}
+.doc-comp-list{
+    padding: 2rem;
+    margin-top: 5rem;
+    padding-top: 0px;
+    width: 50vw;
+}
+.doc-comp-list-li{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2;
+    border-bottom: 2px solid white;   
+}
+.doc-comp-logo-txt{
+    color: var(--cta1);
+    border-bottom-color: var(--cta2);
+    margin-right: auto;
+}
+.doc-comp-list-li:hover{
+    font-size: 1.6rem;
+    border-left: 5px solid var(--cta1);
+    border-bottom-color:var(--cta2) ;
+    padding-left: 8px;
+}
+.doc-comp-close{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 3rem;
+    
+}
+.doc-comp-dark{
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+}
+.doc-comp-close:hover{
+    color: white;
+    background: var(--darkgray-bg);
+}
+.doc-main{
+    border-bottom: 2px solid var(--darkgray-bg);
+    background-color: var(--litegray-bg);
+}
